@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/loginstyle.css">
+  
+  <title>Login Page</title>
+  <header>
+    <h1 class="project-title">Food Recipe Project</h1>
+  </header>
+</head>
+<body>
+  <section class="panel-container">
+    <div id="registration-message" class="message"></div>
+    <div id="login-message" class="message"></div>
+    <div class="input-container">
+      <input type="text" id="username-field" placeholder="enter your username">
+      <input type="password" id="password-field" placeholder="enter your password">
+    </div>
+
+    <div class="button-container">
+    <button id="register-button">Register</button>
+    <button id="login-button">Login</button>
+    <button id="guest-button" class="guest-button">Enter as Guest</button>
+    </div>
+  </section>
+  <script src="/scripts/guestMode.js"></script>
+  <script src="./scripts/registerScript.js"></script>
+  <script src="scripts/loginScript.js"></script>
+</body>
+</html>

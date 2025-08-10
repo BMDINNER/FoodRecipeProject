@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Recipe Project</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="/scripts/recipeSaveScript.js"></script>
+  <script src="/scripts/recipeDownload.js"></script>
+  <script src="/scripts/searchScript.js"></script>
+  <script src="/scripts/logoutScript.js"></script>
+  <script src="/scripts/recipeEditScript.js"></script>
+  <script src="/scripts/recipeDeleteScript.js"></script>
+  <script src="/scripts/guestMode.js"></script>
+  <script src="https://kit.fontawesome.com/5b24355bc6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--Search bar field-->
+  <section class="search-bar-container">
+      <div class="user-info-container">
+        <span id="username-display"></span>
+      </div>
+    <div class="logout-button-container">
+      <button class="logout-button" id="logout-button">Logout</button>
+    </div>
+    <div class = "search-bar">
+        <div class="input-field">
+          <input type="text" id="input-box" placeholder="Search for a recipe">
+          <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+  </section>
+  
+    <div class="button-container">
+      <button class="add-recipe-button">Add Recipe</button>
+      <button class="edit-recipe-button">Edit Recipe</button>
+      <button class="delete-recipe-button">Delete Recipe</button>
+      <button class="download-recipe-button">Download Recipe</button>
+    </div>
+
+    <hr class="divider">
+  <section class="recipe-view-container">
+    <div class="recipe-container">
+      <textarea name="recipe-area" id="recipe-view" placeholder="Write your recipe here..." readonly></textarea>
+      
+    </div>
+  </section>
+
+
+
+</body>
+</html>
