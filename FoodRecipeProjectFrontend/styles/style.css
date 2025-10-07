@@ -1,0 +1,165 @@
+:root{
+  --gradient: linear-gradient(
+    180deg,
+    rgba(99, 99, 99, 0.73) 60%,
+    #e3e1e1 100%
+  );
+  --grey:#b1bacb;
+  --grey-border:rgba(210,210,210,0.75);
+  --grey-light: #eeeeee;
+  --grey-dark: #405175;
+  --white:#ffffff;
+  --blue:#2d70fd;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+body{
+background:var(--gradient);
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+
+.search-bar-container
+  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  gap: 1rem;
+}
+
+
+
+
+.search-bar{
+  width: 600px;
+  background:var(--white);
+  margin: 2px auto 0;
+  border-radius: 5px;
+}
+
+.input-field{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+input{
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+
+.search-button{
+  background:transparent;
+  border: 0;
+  outline: 0;
+}
+
+.search-button .fa-solid{
+  width: 25px;
+  color: #555;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+  gap: 5rem;
+}
+/* Guest mode styles */
+.guest-mode .add-recipe-button,
+.guest-mode .edit-recipe-button,
+.guest-mode .delete-recipe-button,
+.guest-mode #guest-button {
+    display: none !important;
+}
+
+
+
+.add-recipe-button,.edit-recipe-button,.delete-recipe-button,.download-recipe-button{
+  border: none;
+  width: 8.8rem;
+  height: 2rem;
+  background-color: rgba(12, 11, 11, 0.75);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: clamp(0.5rem, 2vw, .9rem);
+  color: white;
+  margin-top: 3rem;
+}
+
+#recipe-view:not([readonly]) {
+  background-color: #f9f9f9;
+  border-color: #4CAF50;
+}
+
+.logout-button{
+  position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 15px;
+    background-color: var(--grey-dark); /* Red color for logout */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+button:hover{
+  opacity: 0.7;
+}
+
+button:active{
+  opacity:0.5;
+}
+
+.recipe-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#recipe-view{
+  display: flex;
+  width: 1000px;       
+  height: 500px;      
+  resize: none;       
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-width: 10px;
+}
+
+
+.divider{
+  margin-top: 2rem;
+  border-color: black;
+  opacity: 0.3;
+}
+
+
+
