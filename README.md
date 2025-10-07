@@ -24,7 +24,6 @@ A full-stack food recipe application with backend (Node.js/Express) and frontend
 - **jspdf** `^3.0.1` — Generate PDFs in the frontend/backend
 - **mongoose** `^8.17.0` — MongoDB ODM
 - **pdfkit** `^0.17.1` — Create PDFs in Node.js
-- **uuid** `^11.1.0` — Generate unique IDs
 
 ### Dev Dependencies
 - **nodemon** `^3.1.10` — Auto-restart server during development
